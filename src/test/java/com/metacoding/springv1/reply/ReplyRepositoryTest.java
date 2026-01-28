@@ -43,6 +43,7 @@ public class ReplyRepositoryTest {
 
         // when
         replyRepository.delete(reply);
+
         // eye
         Board board = boardRepository.findById(boardId).get();
         System.out.println("Reply Count : " + board.getReplies().size());
